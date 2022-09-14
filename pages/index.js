@@ -33,7 +33,7 @@ else if(mode==false){
    <div className={ThemeStyle.aboutMe}>
    <div className={styles.profilePic}></div>
     <h1>
-    I'M POURIYA CHIBAIE <br/>
+    I&aposM POURIYA CHIBAIE <br/>
     <span>WEB DEVELOPER</span>
     
     </h1>

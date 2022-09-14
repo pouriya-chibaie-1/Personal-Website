@@ -1,6 +1,6 @@
-const PrImageLoc=  "http://localhost:3000/programing language pr img/"
+const PrImageLoc=  "/programing language pr img/"
 
-const SkillList={data :[{"title":"Next js"    , "imgSrc":`${PrImageLoc}nextjs.svg`   ,"progressSkill":"60"     },
+ export const SkillList={data :[{"title":"Next js"    , "imgSrc":`${PrImageLoc}nextjs.svg`   ,"progressSkill":"60"     },
 {"title":"React"      , "imgSrc":`${PrImageLoc}react.svg`    ,"progressSkill": "60"     },
 {"title":"Redux"      , "imgSrc":`${PrImageLoc}redux.svg`    ,"progressSkill":"50"      },
 {"title":"CSS3"       , "imgSrc":`${PrImageLoc}css3.svg`     ,"progressSkill":"70"       },
@@ -12,7 +12,3 @@ const SkillList={data :[{"title":"Next js"    , "imgSrc":`${PrImageLoc}nextjs.sv
 {"title":"github"     , "imgSrc":`${PrImageLoc}github.svg`,"progressSkill": "70"    },
 {"title":"mui"        , "imgSrc":`${PrImageLoc}mui.svg`,"progressSkill":    "70"    },
 {"title":"HTML5"      , "imgSrc":`${PrImageLoc}html5.svg`,"progressSkill":  "80"    },]}
-export default function handler(req, res) {
-    res.status(200).json(SkillList)
-  }
-  

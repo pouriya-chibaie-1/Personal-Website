@@ -1,15 +1,16 @@
 import styles from "../styles/about.module.scss"
 import dynamic from 'next/dynamic';
 import OptionGenrator from "../components/radialOption"
-const About = ({skill}) => {
+import {SkillList} from '../data/listSkill'
+import Image from "next/image";
+const About = ({}) => {
     const ApexCharts = dynamic(() => import('react-apexcharts'), { ssr: false });
-
 
 
 return (<>
     <div className={`${styles.container} grid grid-cols-3 gap-4`}>
 
-{skill.map((item,index)=>(
+{SkillList.data.map((item,index)=>(
    
 
     <div className={`${styles.CardLang} bg-slate-800`} key={index}>
@@ -23,11 +24,5 @@ return (<>
     </div>
     </>  );
 }
-export async function getStaticProps(context) {
-    const res= await fetch('http://localhost:3000/api/listSkill')
-    const skill = await res.json()
-  return {
-    props:{skill :skill.data}
-  }
-}
+
 export default About;
