@@ -35,7 +35,7 @@ else if(mode==false){
     <Image src={'/PROFILEIMG.jpg'}layout="fill"objectFit='cover'style={{borderRadius:"30px"}}></Image>
    </div>
     <h1>
-    I'M POURIYA CHIBAIE <br/>
+    I&lsquo;M POURIYA CHIBAIE <br/>
     <span>WEB DEVELOPER</span>
     
     </h1>
