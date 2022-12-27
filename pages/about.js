@@ -12,11 +12,11 @@ return (<>
 {skill.map((item,index)=>(
    
 
-    <div className={`${styles.CardLang} bg-slate-800`} key={index}>
+    <div className={`${styles.CardLang} bg-slate-100`} key={index}>
     <h1 className={styles.textSkill}>{item.title}</h1>
     <img className={styles.imgPr} src={item.imgSrc} alt={item.title} />
 <ApexCharts options={OptionGenrator(item)} series={[parseInt(item.progressSkill)]} type="radialBar" width={292} height={171} />
-
+ 
     </div>
 ))}
 

@@ -31,7 +31,9 @@ else if(mode==false){
 <ThemeSwith setMode={setMode} mode={mode}/>
    <div className={styles.rotatedBox}></div>
    <div className={ThemeStyle.aboutMe}>
-   <div className={styles.profilePic}></div>
+   <div className={styles.profilePic}>
+    <Image src={'/PROFILEIMG.jpg'}layout="fill"objectFit='cover'style={{borderRadius:"30px"}}></Image>
+   </div>
     <h1>
     I'M POURIYA CHIBAIE <br/>
     <span>WEB DEVELOPER</span>
